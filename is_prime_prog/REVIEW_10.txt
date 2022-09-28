@@ -1,0 +1,5 @@
+Pour is_prime:
+Rajouter la condition du n==0 dans le premier if. Le while(true) aurait pu être while(cin >> n). A part ça c’est bien.
+Pour le find motive je n’ai rien a dire. 
+Pour le rendu général, pensez a supprimer les .vscode avant le push final et a bien faire les tags, pour l’instant vous n’avez fait que des commits.
+Pour le tag vous pouvez les faire en faisant git tag -a exercice1_first » -m « « puis git push —tags .
