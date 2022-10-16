@@ -1,3 +1,0 @@
-/home/skylos/cpp/cartesian_vector_param/CMakeFiles/rebuild_cache.dir
-/home/skylos/cpp/cartesian_vector_param/CMakeFiles/edit_cache.dir
-/home/skylos/cpp/cartesian_vector_param/CMakeFiles/main.dir
