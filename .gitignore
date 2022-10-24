@@ -1,1 +1,10 @@
 .DS_Store
+CMakeFiles/
+*.cmake
+*.a*
+*.bin
+*.log
+*.marks
+*.o
+main
+tmpCartVec*
