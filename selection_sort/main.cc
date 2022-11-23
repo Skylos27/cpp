@@ -50,7 +50,7 @@ void test(const CONT& v)
 
 void test_int()
 {
-  auto v = std::vector{9,5,3,2,6,6};
+  auto v = std::vector<int>{9,5,3,2,6,6};
   test(v);
 }
 

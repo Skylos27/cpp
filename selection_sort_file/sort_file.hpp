@@ -15,7 +15,7 @@
 
 
 template <typename File, typename Cont, typename Type>
-void read_file_to_cont(File& f, Cont &c) 
+void read_file_to_cont(File& f, Cont &c)
 {
   Type tmp;
   while (f >> tmp) {
@@ -23,15 +23,15 @@ void read_file_to_cont(File& f, Cont &c)
   }
 }
 
-template <typename IStream, typename OStream, typename Cont, typename Type>
+template <typename IStream, typename OStream, typename Cont, class Type>
 void read_and_sort(IStream& fi, OStream& fo) {
   Cont container;
   read_file_to_cont<IStream, Cont, Type>(fi, container);
 
   my_selection_sort(container.begin(), container.end());
 
-  for (Cont::iterator x = container.begin(); x != container.end(); x++)
-    fo << *x << std::endl;
+  for (Type &x : container)
+    fo << x << std::endl;
 }
 
 template <typename IStream, typename OStream, typename Type>
@@ -93,6 +93,3 @@ void read_and_sort_decide_valuetype(IStream& fi, OStream& fo) {
       break;
   }
 }
-
-
-

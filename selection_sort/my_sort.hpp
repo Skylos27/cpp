@@ -3,15 +3,15 @@
 // something more meaningful
 
 
-template <typename it>
-void swap(it a, it b)
+template <class it>
+void swap(it &a, it &b)
 {
-    it::value_type tmp = *a;
-    *a = *b;
-    *b = tmp;
+    it tmp = a;
+    a = b;
+    b = tmp;
 }
 
-template <typename it>
+template <class it>
 it min_elem(it begin, it end)
 {
     it smallest;
@@ -30,11 +30,11 @@ it min_elem(it begin, it end)
     return smallest;
 }
 
-template <typename it>
-void my_selection_sort(it begin, it end) 
+template <class it>
+void my_selection_sort(it begin, it end)
 {
     for (it i = begin; i != end; ++i)
     {
-        swap(i, min_elem(i, end));
+        swap(*i, *min_elem(i, end));
     }
 }
